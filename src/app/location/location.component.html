@@ -1,1 +1,29 @@
-<p>location works!</p>
+<div class="location-container">
+
+    <div class="location-left">
+        <div class="location-left-headline">
+            <h2>Zeit, Essen zu bestellen</h2>
+            <span>Jetzt Restaurants in Deiner Nähe finden</span>
+        </div>
+        <mat-form-field class="custom-form-field example-form-field">
+            <mat-label>Adresse eingeben</mat-label>
+            <input class="input-field" matInput type="text" [(ngModel)]="value">
+            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+    </div>
+    <div>
+        <div class="location-right-top">
+            <h2>HÖR ICH DA</h2>
+            <img src="assets/img/hamburger.png">
+        </div>
+       
+        <div class="location-right-bottom">
+            <img src="">
+        </div>
+        
+
+    </div>
+    
+</div>

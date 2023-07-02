@@ -16,6 +16,12 @@ import { FooterComponent } from './footer/footer.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { DialogAccountComponent } from './dialog-account/dialog-account.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,8 @@ import { MatButtonModule } from '@angular/material/button';
     OrderSectionComponent,
     FahrerComponent,
     LocationComponent,
-    FooterComponent
+    FooterComponent,
+    DialogAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,13 @@ import { MatButtonModule } from '@angular/material/button';
     MatSlideToggleModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    NgIf,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

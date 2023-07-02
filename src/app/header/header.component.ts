@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
+import { DialogAccountComponent } from '../dialog-account/dialog-account.component';
 
 
 @Component({
@@ -9,12 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    
+
   }
 
   myAccount() {
-    
+    this.dialog.open(DialogAccountComponent);
   }
 }
