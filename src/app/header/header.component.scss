@@ -1,0 +1,23 @@
+mat-toolbar-row {
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  height: 80px;
+}
+
+.header-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline {
+  color: rgb(255, 150, 0);
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.header-img {
+  width: 40px;
+  height: 40px;
+}
